@@ -5,9 +5,9 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{7979E15B-C30C-4F12-BD14-5D9844FC94AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VinoMidi", "Generator\VinoMidi.csproj", "{DC3D9799-C8A6-4C53-9916-836A7DF38725}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VinoMidi.Tests", "VinoMidi.Tests\VinoMidi.Tests.csproj", "{9E2D1B32-453F-4036-A387-D2F39D00D426}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VinoMidi", "VinoMidi\VinoMidi.csproj", "{2F3ABB6E-D037-43EA-A2B0-2767E3ABF2D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{7979E15B-C30C-4F12-BD14-5D9844FC94AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7979E15B-C30C-4F12-BD14-5D9844FC94AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7979E15B-C30C-4F12-BD14-5D9844FC94AB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DC3D9799-C8A6-4C53-9916-836A7DF38725}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DC3D9799-C8A6-4C53-9916-836A7DF38725}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DC3D9799-C8A6-4C53-9916-836A7DF38725}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DC3D9799-C8A6-4C53-9916-836A7DF38725}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9E2D1B32-453F-4036-A387-D2F39D00D426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9E2D1B32-453F-4036-A387-D2F39D00D426}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E2D1B32-453F-4036-A387-D2F39D00D426}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E2D1B32-453F-4036-A387-D2F39D00D426}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F3ABB6E-D037-43EA-A2B0-2767E3ABF2D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F3ABB6E-D037-43EA-A2B0-2767E3ABF2D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F3ABB6E-D037-43EA-A2B0-2767E3ABF2D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F3ABB6E-D037-43EA-A2B0-2767E3ABF2D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

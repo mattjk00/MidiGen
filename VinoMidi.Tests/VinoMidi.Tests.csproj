@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Generator\VinoMidi.csproj" />
+    <ProjectReference Include="..\VinoMidi\VinoMidi.csproj" />
   </ItemGroup>
 
 </Project>
