@@ -5,7 +5,13 @@ using Melanchall.DryWetMidi.MusicTheory;
 using VinoMidi;
 
 Generator generator = new Generator("./");
-generator.Generate();
+var chain = generator.Generate();
+chain.PrintInfo();
+var midi = chain.CreateMidi(100);
+MidiFile midiFile = midi.ToFile(TempoMap.Default);
+FileStream fs = new FileStream("out/out.mid", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+midiFile.Write(fs);
+fs.Close();
 
 /*FileStream fs = new FileStream("test.mid", FileMode.Open, FileAccess.Read);
 MidiFile mFile = MidiFile.Read(fs);

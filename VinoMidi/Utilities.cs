@@ -1,4 +1,5 @@
-﻿using Melanchall.DryWetMidi.Interaction;
+﻿using MathNet.Numerics.LinearAlgebra;
+using Melanchall.DryWetMidi.Interaction;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,11 +8,27 @@ using System.Threading.Tasks;
 
 namespace VinoMidi
 {
-    internal static class Utilities
+    public static class Utilities
     {
         public static bool NoteEquals(this Note a, Note b)
         {
             return a.Length == b.Length && a.NoteName == b.NoteName;
+        }
+
+        public static int RandomSelection(Vector<float> probabilities)
+        {
+            Random r = new Random();
+            float x = (float)r.NextDouble();
+            float sum = 0.0f;
+            for (int i = 0; i < probabilities.Count; i++)
+            {
+                sum += probabilities[i];
+                if (x < sum)
+                {
+                    return i;
+                }
+            }
+            return -1;
         }
     }
 }

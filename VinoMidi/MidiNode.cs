@@ -10,6 +10,7 @@ namespace VinoMidi
     public class MidiNode : IEquatable<MidiNode>, ICloneable
     {
         private List<Note> _notes;
+        public List<Note> Notes { get { return _notes; } }
 
         public MidiNode(params Note[] notes)
         {
@@ -62,8 +63,7 @@ namespace VinoMidi
             var sb = new StringBuilder();
             _notes.ForEach(n =>
             {
-                sb.Append(n.NoteName);
-                sb.Append(' ');
+                sb.Append($"{n.NoteName}{n.Octave} ");
             });
             return $"{sb.ToString()}";
         }
