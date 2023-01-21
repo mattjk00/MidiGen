@@ -23,6 +23,7 @@ namespace VinoMidi
                 using (FileStream fs = new FileStream(file, FileMode.Open, FileAccess.Read))
                 {
                     MidiFile mf = MidiFile.Read(fs);
+                    MidiTrack mt = new MidiTrack(mf, KeySignature.C);   // This needs to change. Defaults all tracks to C.
                     var notes = mf.GetNotes();
 
                     var newPairs = ExtractPairsFromNotes(notes);

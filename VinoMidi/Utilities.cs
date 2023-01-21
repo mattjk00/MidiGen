@@ -31,4 +31,29 @@ namespace VinoMidi
             return -1;
         }
     }
+
+    public enum KeySignature
+    {
+        C,
+        CSharp,
+        DFlat,
+        D,
+        DSharp,
+        EFlat,
+        E,
+        ESharp,
+        FFlat,
+        F,
+        FSharp,
+        GFlat,
+        G,
+        GSharp,
+        AFlat,
+        A,
+        ASharp,
+        BFlat,
+        B,
+        BSharp,
+        CFlat
+    }
 }
